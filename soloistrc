@@ -11,6 +11,9 @@ recipes:
 - sprout-osx-settings::defaults_fast_key_repeat_rate
 - pivotal_workstation::locate_on
 - sprout-osx-settings::global_environment_variables
+- sprout-osx-settings::remove_expose_keyboard_shortcuts
+- sprout-osx-settings::disable_front_row
+- sprout-osx-settings::finder_display_full_path
 
 # development (general)
 - sprout-osx-base::workspace_directory
@@ -37,41 +40,26 @@ recipes:
 - sprout-osx-apps::chrome
 - pivotal_workstation::mouse_locator
 - sprout-osx-apps::menumeters
-- pivotal_workstation::bettertouchtool
-- sprout-osx-apps::ccmenu
+#- pivotal_workstation::bettertouchtool
+#- sprout-osx-apps::ccmenu
 - pivotal_workstation::github_for_mac
 - sprout-osx-apps::gitx
-- sprout-osx-apps::iterm2
-- sprout-osx-apps::keycastr
+#- sprout-osx-apps::iterm2
+#- sprout-osx-apps::keycastr
 - sprout-osx-apps::virtualbox
 - sprout-osx-apps::vagrant
+- sprout-osx-apps::adium
+- sprout-osx-apps::alfred
+- sprout-osx-apps::propane
 
 # apps (editors)
-- sprout-osx-apps::textmate
-- sprout-osx-apps::textmate_bundles
-- sprout-osx-apps::textmate_preferences
+#- sprout-osx-apps::textmate
+#- sprout-osx-apps::textmate_bundles
+#- sprout-osx-apps::textmate_preferences
 
-- sprout-osx-apps::macvim
-- sprout-osx-apps::ctags_exuberant
+#- sprout-osx-apps::macvim
+#- sprout-osx-apps::ctags_exuberant
 
-- sprout-osx-apps::rubymine
-- sprout-osx-rubymine::preferences
-
-node_attributes:
-  git_pairs_domain: pivotallabs.com
-  git_pairs_authors:
-    - initials: ah
-      name: Abhijit Hiremagalur
-      shortname: abhi
-    - initials: bc
-      name: Brian Cunnie
-      shortname: cunnie
-    - initials: jrhb
-      name: Jonathan Barnes
-    - initials: lw
-      name: Luke Winikates
-      shortname: lwinikates
-  git_projects:
-    -
-      - sprout-wrap
-      - https://github.com/pivotal-sprout/sprout-wrap.git
+#- sprout-osx-apps::rubymine
+#- sprout-osx-rubymine::preferences
+- sprout-osx-apps::sublime_text
